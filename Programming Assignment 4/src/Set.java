@@ -3,9 +3,12 @@
  * Summer II 2020
  * Programming Assignment 4
  */
+
 public class Set {
 	LinkedNode head;
 
+	// This add method checks if the value exists and then adds it to the string if
+	// it's not there
 	public void add(int data) {
 		if (!exists(data)) {
 			LinkedNode new_node = new LinkedNode(data);
@@ -14,6 +17,8 @@ public class Set {
 		}
 	}
 
+	// This del method also checks if the value exists in the string and then
+	// deletes it while still keep the other values in the string
 	public void del(int dataInt) {
 		if (!exists(dataInt)) {
 			return;
@@ -44,6 +49,8 @@ public class Set {
 		return;
 	}
 
+	// This boolean method checks if the value exists and then prints a true or
+	// false
 	public boolean exists(int dataInt) {
 		if (head == null) {
 			return false;
@@ -59,6 +66,8 @@ public class Set {
 		return false;
 	}
 
+	// This toString method appends the values to the string as it moves through the
+	// program
 	public String toString() {
 
 		if (head == null) {
