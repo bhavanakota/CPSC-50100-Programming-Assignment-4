@@ -7,6 +7,7 @@
 // This just pretty much sets up the nodes for the other files
 public class LinkedNode {
 	int data; // The data value
+	int x;
 	LinkedNode next; // Reference to the next LinkedNode
 
 	// Default constructor
@@ -23,5 +24,4 @@ public class LinkedNode {
 		// TODO Auto-generated method stub
 
 	}
-
 }
